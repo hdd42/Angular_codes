@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="add60bc0-6fea-4fc7-b161-28771b0161f3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1XN26HbS5onW8PIYgmXUjxtoYlt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\husey\Desktop\Javaci\Angular Egitim\Server\config" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="add60bc0-6fea-4fc7-b161-28771b0161f3" name="Default Changelist" comment="" />
+      <created>1580865166282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580865166282</updated>
+      <workItem from="1580865171339" duration="3232000" />
+      <workItem from="1580871812897" duration="29000" />
+      <workItem from="1580872061278" duration="3683000" />
+      <workItem from="1580959411638" duration="5950000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="525" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580960333593">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="525" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1580960333593" />
+    <state x="466" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1580959412559">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="466" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824/3840.0.2194.1194@0.0.1536.824" timestamp="1580872086967" />
+    <state x="466" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580959412559" />
+    <state x="750" y="20" width="613" height="804" key="find.popup" timestamp="1580959489528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="750" y="20" width="613" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1580959489528" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580962762077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580962762077" />
+  </component>
+</project>

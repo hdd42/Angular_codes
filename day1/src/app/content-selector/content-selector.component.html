@@ -1,0 +1,49 @@
+<a routerLink="/home">Back to home</a>
+
+<h4>Topic : {{topic}}</h4>
+<hr>
+
+
+<!--<app-directive *ngIf="topic==='directives'"></app-directive>
+<app-events *ngIf="topic==='events'"></app-events>
+<app-providers *ngIf="topic==='providers'"></app-providers>-->
+
+
+<div [ngSwitch]="topic">
+  <ng-template [ngSwitchCase]="'directives'">
+    <app-directive *ngIf="topic==='directives'"></app-directive>
+  </ng-template>
+
+  <ng-template [ngSwitchCase]="'events'">
+    <app-events *ngIf="topic==='events'"></app-events>
+  </ng-template>
+
+  <ng-template [ngSwitchCase]="'providers'">
+    <app-providers *ngIf="topic==='providers'"></app-providers>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'http'">
+    <app-product ></app-product>
+  </ng-template>
+
+  <ng-template ngSwitchDefault>
+
+
+    Default topic
+  </ng-template>
+
+</div>
+<hr>
+<div [ngStyle]=" {backgroundColor:bgColor, color:textColor} ">Topic Color</div>
+<button [ngClass]="{'btn btn-sm btn-info' :topic==='events' , 'btn btn-sm btn-warning' : topic!=='events'}">
+  ngClass
+</button>
+
+<button class="{{topic === 'events' ? 'btn btn-sm btn-info' : 'btn btn-sm btn-warning'}}"
+
+>
+  hml attributes
+</button>
+<input type="text" [disabled]="topic==='events'" [hidden]="topic==='providers'" value="disabled ">
+<!--
+<div [ngStyle]=" getStyle()">Topic Color</div>
+-->

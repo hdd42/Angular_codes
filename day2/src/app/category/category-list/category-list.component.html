@@ -1,0 +1,23 @@
+<table class="table table-compact">
+  <thead>
+  <tr>
+    <th class="left">Name</th>
+    <th>Description</th>
+    <th>Products </th>
+    <th class="left">Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let cat of categories">
+    <td class="left">{{cat.name}}</td>
+    <td>{{cat.description|slice:30}}...</td>
+    <td>{{cat.productCount}}</td>
+    <td class="left">
+      <span class="label" [ngClass]="{'label-info':cat.active , 'label-warning':!cat.active}">{{
+        cat.active ? 'Active' :'Disabled'  
+      }}</span>
+    </td>
+  </tr>
+
+  </tbody>
+</table>

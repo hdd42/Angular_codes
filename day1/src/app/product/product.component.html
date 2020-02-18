@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-12">
+    <div class="alert alert-danger" *ngIf="errorMessage" role="alert">
+      {{errorMessage}}
+      <hr>
+      <button (click)="refresh()" class="btn btn-sm btn-secondary">Refresh</button>
+    </div>
+
+    <div class="card">
+      <h5 class="card-header">Products</h5>
+      <div class="card-body">
+        <table class="table border table-striped table-hover">
+          <thead class="thead-dark">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Details</th>
+          </tr>
+          </thead>
+
+          <tbody *ngIf="products; else loading">
+            <tr *ngFor="let product of products">
+              <td>{{product._id}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.category.name}}</td>
+              <td>
+                <button (click)="navigate(product)" class="btn btn-sm btn-outline-info">Detail</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+loading...
+</ng-template>

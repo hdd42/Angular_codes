@@ -1,0 +1,33 @@
+
+<div class="clr-row">
+  <div class="clr-col-12 ">
+    <app-product-search (searchEmitter)="searchProducts($event)"></app-product-search>
+  </div>
+</div>
+<div class="card" >
+  <div class="card-header">
+    Products
+  </div>
+  <div class="card-block">
+    <div class="card-title">
+      <app-product-home-meta (limitEmitter)="limitChange($event)"></app-product-home-meta>
+    </div>
+
+    <div class="clr-row">
+      <span *ngIf="isLoading" class="label label-info">Loading...</span>
+      <ng-container *ngIf="productsResponse">
+        <app-product-item (deleteEmitter)="deleteProduct($event)"
+                          *ngFor="let product of productsResponse.data" [product]="product">
+
+        </app-product-item>
+      </ng-container>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button routerLink="/product/add" [queryParams]="{mode:'add'}" class="btn btn-sm btn-link">Add new</button>
+  </div>
+</div>
+
+
+
+

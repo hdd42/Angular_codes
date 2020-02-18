@@ -1,0 +1,17 @@
+
+<div class="dropdown bottom-right" [ngClass]="{'open':isOpen}">
+  <button type="button" (click)="this.toggleSelector()"
+          class="dropdown-toggle btn btn-link"  >
+    Showing  <span class="badge badge-purple">{{selectedLimit}}</span>  products per page
+    <clr-icon shape="caret down"></clr-icon>
+  </button>
+  <div class="dropdown-menu">
+    <h4 class="dropdown-header">Limit</h4>
+    <button (click)="changeLimit(10)" type="button" class="dropdown-item "
+            [ngClass]="{'active':selectedLimit==10}"
+    >10</button>
+    <button (click)="changeLimit(20)"  type="button" class="dropdown-item "  [ngClass]="{'active':selectedLimit==20}">20</button>
+    <button (click)="changeLimit(50)"  type="button" class="dropdown-item "  [ngClass]="{'active':selectedLimit==50}">50</button>
+    <button (click)="changeLimit(100)"  type="button" class="dropdown-item "  [ngClass]="{'active':selectedLimit==100}">100</button>
+  </div>
+</div>

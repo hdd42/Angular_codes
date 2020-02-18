@@ -1,0 +1,50 @@
+<div class="card">
+  <div class="card-header">
+    {{pageTitle||'sss'}}
+  </div>
+  <div class="card-block">
+    <form class="form" [formGroup]="productForm" (ngSubmit)="onSubmit()" style="padding: 5px">
+      <section class="form-block">
+        <div class="form-group" >
+          <label for="productName">Product Name</label>
+
+            <input style="margin-left: 5px" id="productName" type="text"
+                   formControlName="name">
+          <span class="tooltip-content"
+                *ngIf="!productForm.get('name').valid &&   productForm.get('name').touched">
+                    name  is required.
+            </span>
+        </div>
+
+        <div class="form-group" style="margin: 5px">
+          <label for="productPrice">Product Price</label>
+            <input style="margin-left: 5px" id="productPrice" type="text"
+                   formControlName="price">
+            <span class="tooltip-content" *ngIf="!productForm.get('price').valid &&   productForm.get('price').touched">
+                    Price  is required.
+            </span>
+        </div>
+
+        <div class="form-group" style="margin: 5px">
+          <label for="productPrice">Product Image</label>
+          <input style="margin-left: 5px" id="productUrl" type="text"
+                 formControlName="imgUrl">
+        </div>
+
+        <div class="form-group" style="margin: 5px">
+          <label for="productDescription">Product Desc</label>
+          <input style="margin-left: 5px" id="productDescription" type="text"
+                 formControlName="description">
+        </div>
+
+        <button class="btn btn-primary"
+                type="submit"
+                [disabled]="productForm.invalid">Add</button>
+      </section>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button routerLink="/product" class="btn btn-sm btn-link">Back to Products</button>
+  </div>
+</div>
+

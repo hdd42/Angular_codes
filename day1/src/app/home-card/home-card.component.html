@@ -1,0 +1,24 @@
+<div class="card homeCards">
+  <div class="card-body">
+    <ng-content select=".target1"></ng-content>
+    <h5 class="card-title">{{cardTitle}}</h5>
+    <p class="card-text">
+      {{cardText}}
+    </p>
+    <ng-content></ng-content>
+
+    <a routerLink="{{cardLink}}" [queryParams]="{userId:12 , userRole:55}" class="card-link">{{cardLinkText}} </a>
+
+    <a [routerLink]="[cardLink,25,{isUserAdmin:true, showSummary:false },'user',66]"
+       [queryParams]="{userId:12 , userRole:55}"
+       class="card-link">{{cardLinkText}} </a>
+
+  </div>
+</div>
+
+
+<!--
+/user/123;admin=true/profile/edit?id=1
+
+/user/:id/profile/:mode
+-->

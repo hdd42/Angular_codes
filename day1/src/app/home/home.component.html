@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Components" [cardText]="'Re-using components'"></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Angular routing" [cardText]="'navigation, route params...'"
+                   cardLink="/content/routing" cardLinkText="Go To Routing"
+    ></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Components" [cardText]="'Directives'"
+                   cardLink="/content/directives" cardLinkText="Go To Directives"></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Events" [cardText]="'Event Handling'"
+                   cardLinkText="Event Handling" cardLink="/content/events"></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Providers" [cardText]="'DI/ Providers & Services'"
+                   cardLink="/content/providers" cardLinkText="Go to providers "></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Forms" [cardText]="'Form handling'"
+                   cardLinkText="Form" cardLink="/content/forms"></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="HTTP/Server" [cardText]="'HTTP/Server Communication'"
+                   cardLink="/content/http" [cardLinkText]="'Go to Http'"></app-home-card>
+  </div>
+
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Pipes" [cardText]="'Built-in Pipes/Custom Pipes'"
+                   cardLinkText="Go to Pipes" cardLink="/content/pipes"></app-home-card>
+  </div>
+  <div class="col-4 homeCardCols">
+    <app-home-card cardTitle="Interceptors" [cardText]="'Http & Route interceptors.'"
+                   cardLink="/content/interceptors" cardLinkText="Go to Middlewares ">
+      <button class="btn btn-sm btn-outline-info">Content Projection</button>
+      <hr>
+    </app-home-card>
+  </div>
+
+  <app-home-card>
+    <button class="btn btn-sm btn-outline-info">Content Projection</button>
+    <button class="btn btn-sm btn-outline-info target1">Content 2</button>
+  </app-home-card>
+
+</div>

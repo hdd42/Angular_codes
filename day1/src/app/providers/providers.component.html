@@ -1,0 +1,20 @@
+<div class="card">
+  <h5 class="card-header">User</h5>
+  <div class="card-body" *ngIf="user; else loading">
+    <h5 class="card-title">{{user.name}}</h5>
+    <p class="card-text">{{user.id}}</p>
+    <a href="#" class="btn btn-primary">{{user.email}}</a>
+  </div>
+
+  <div class="card-body" >
+    <h5 class="card-title">{{user?.name}}</h5>
+    <p class="card-text">{{user?.id}}</p>
+    <a href="#" class="btn btn-primary">{{user?.email}}</a>
+  </div>
+</div>
+
+<ng-template #loading>
+  user loading...
+</ng-template>
+
+
